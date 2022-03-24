@@ -1,10 +1,11 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { useWindowDimensions } from '../../hooks/use-window-dimensions/useWindowDimensions';
 import Logo from '../../assets/shared/logo.ico';
 import Hamburger from '../../assets/shared/icon-hamburger.ico';
 import Close from '../../assets/shared/icon-close.ico';
 import { content } from '../../constants/content';
 import { MOBILE_MAX_WIDTH, TABLET_MAX_WIDTH } from '../../constants/dimensions';
-import { useWindowDimensions } from '../../hooks/use-window-dimensions/useWindowDimensions';
 import './NavigationBar.css';
 
 const NavigationBar = ({ isMain = false }) => {
@@ -34,10 +35,15 @@ const NavigationBar = ({ isMain = false }) => {
           <ul className='nav-items flex'>
             {content?.main?.navItems.map((item, index) => (
               <li key={index} className='nav-item align-center'>
-                <a href='#'>
+                <NavLink
+                  className={(navData) => (navData.isActive ? 'active' : '')}
+                  to={`/${
+                    item?.value !== 'Home' ? item?.value.toLowerCase() : ''
+                  }`}
+                >
                   {shouldDisplayPrefix && <span>{item?.prefix}</span>}
                   {item?.value.toUpperCase()}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>
@@ -47,4 +53,5 @@ const NavigationBar = ({ isMain = false }) => {
   );
 };
 
+NavigationBar.displayName = 'NavigationBar';
 export default React.memo(NavigationBar);
