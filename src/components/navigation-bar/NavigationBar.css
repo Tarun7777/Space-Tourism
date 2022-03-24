@@ -1,0 +1,42 @@
+.header {
+  margin-left: 3.5rem;
+}
+
+.logo {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.nav-bar {
+  width: 57.5%;
+  height: 5rem;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+}
+
+.nav-bar::before {
+  content: '';
+  height: 1px;
+  width: 62%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 2.5rem;
+  left: -58%;
+  opacity: 0.15;
+}
+
+.nav-items {
+  font-family: 'Barlow Condensed', sans-serif;
+  height: 100%;
+  margin: 0 19% 0 14%;
+}
+
+.nav-item {
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+}
+
+.nav-item span {
+  font-weight: 700;
+}
