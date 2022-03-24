@@ -1,0 +1,18 @@
+.home--right-panel .explore-btn {
+  color: rgb(11, 13, 23);
+  height: 17.125rem;
+  width: 17.125rem;
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 37px;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.home--right-panel .explore-btn:hover {
+  box-shadow: 0 0 0 5.5rem rgba(255, 255, 255, 0.1);
+  mix-blend-mode: normal;
+}

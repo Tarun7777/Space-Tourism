@@ -3,7 +3,7 @@ import { content } from '../../../../constants/content';
 
 const WelcomeText = () => {
   return (
-    <div>
+    <div className='home--left-panel'>
       <h5>{content?.main?.superHeadings?.home?.value.toUpperCase?.()}</h5>
       <h1>{content?.home?.common?.heading.toUpperCase?.()}</h1>
       <p>{content?.home?.common?.subHeading}</p>
