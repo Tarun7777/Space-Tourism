@@ -1,0 +1,17 @@
+.home {
+  display: flex;
+  padding: 10rem 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    padding: 6rem 1.5em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    padding: 3rem 1.5rem;
+  }
+}
