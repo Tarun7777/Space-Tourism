@@ -1,4 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+h1 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 9.375rem;
+  line-height: 172px;
+}
+
+h5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 34px;
+  letter-spacing: 0.295rem;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 32px;
+}
 
 * {
   box-sizing: border-box;

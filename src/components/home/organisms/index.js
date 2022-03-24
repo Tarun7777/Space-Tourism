@@ -1,7 +1,13 @@
 import React from 'react';
+import WelcomeText from '../atoms/welcome-text/WelcomeText';
+import './index.css';
 
 const Home = () => {
-  return <>Hello</>;
+  return (
+    <section className='home'>
+      <WelcomeText />
+    </section>
+  );
 };
 
 Home.displayName = 'Home';

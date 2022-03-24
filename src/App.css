@@ -6,6 +6,10 @@
   min-height: 100vh;
 }
 
+.app--content {
+  padding: 0 10.375rem;
+}
+
 @media only screen and (max-width: 1024px) {
   #app {
     background: black url('./assets/home/background-home-tablet.jpg') no-repeat;

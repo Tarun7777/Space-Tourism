@@ -7,13 +7,15 @@ function App() {
   return (
     <div id='app'>
       <NavigationBar isMain />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/destination' />
-        <Route path='/crew' />
-        <Route path='/technology' />
-        <Route path='*' />
-      </Routes>
+      <div className='app--content'>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/destination' />
+          <Route path='/crew' />
+          <Route path='/technology' />
+          <Route path='*' />
+        </Routes>
+      </div>
     </div>
   );
 }
