@@ -113,8 +113,7 @@ a {
     font-size: 1rem;
     width: 100%;
   }
-  .nav-item:active,
-  .nav-item:hover {
+  .active {
     border-right: 3px solid #ffffff;
     border-bottom: 0px;
   }
