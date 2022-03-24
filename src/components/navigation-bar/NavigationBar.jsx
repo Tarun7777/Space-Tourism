@@ -33,9 +33,11 @@ const NavigationBar = ({ isMain = false }) => {
         <nav className='nav-bar'>
           <ul className='nav-items flex'>
             {content?.main?.navItems.map((item, index) => (
-              <li key={index} className='nav-item'>
-                {shouldDisplayPrefix && <span>{item?.prefix}</span>}
-                {item?.value.toUpperCase()}
+              <li key={index} className='nav-item align-center'>
+                <a href='#'>
+                  {shouldDisplayPrefix && <span>{item?.prefix}</span>}
+                  {item?.value.toUpperCase()}
+                </a>
               </li>
             ))}
           </ul>
