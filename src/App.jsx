@@ -1,12 +1,16 @@
-import { Route, Routes } from 'react-router-dom';
-import NavigationBar from './components/navigation-bar/NavigationBar';
-import Home from './components/home/organisms/index'
+import React from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import Header from './components/header/organisms/index';
+import Home from './components/home/organisms/index';
+import { HOME } from './constants';
 import './App.css';
 
-function App() {
+const App = () => {
+  const route = useLocation().pathname.replace('/', '');
+
   return (
-    <div id='app'>
-      <NavigationBar isMain />
+    <div id='app' className={`app--${route || HOME}`}>
+      <Header isMain />
       <div className='app--content'>
         <Routes>
           <Route path='/' element={<Home />} />
@@ -18,6 +22,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
