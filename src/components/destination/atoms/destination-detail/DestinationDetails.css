@@ -1,0 +1,14 @@
+hr {
+    height: 1px;
+    background: rgb(56, 59, 75);
+    border: none;
+    margin: 3.375rem 0 1.75rem;
+}
+
+.destination--details {
+    display: flex;
+}
+
+.destination--details div {
+    width: 50%;
+}

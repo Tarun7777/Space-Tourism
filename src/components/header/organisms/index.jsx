@@ -9,7 +9,11 @@ import {
 } from '../../../constants';
 import './index.css';
 
-const Header = ({ isMain = false, navItems = content?.main?.navItems, path = '' }) => {
+const Header = ({
+  isMain = false,
+  navItems = content?.main?.navItems,
+  path = '',
+}) => {
   const { width } = useWindowDimensions();
   const [isNavBarOpen, toggleNavBar] = React.useState(false);
   const shouldDisplayPrefix =
@@ -21,7 +25,7 @@ const Header = ({ isMain = false, navItems = content?.main?.navItems, path = '' 
   };
 
   return (
-    <div className='header flex'>
+    <div className={`header ${isMain ? 'header--main' : ''} flex`}>
       {isMain && <Logo />}
       <Navbar
         isMain={isMain}

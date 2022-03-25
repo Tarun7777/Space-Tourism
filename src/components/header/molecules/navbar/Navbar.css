@@ -1,4 +1,9 @@
 .nav-bar {
+  width: 17.8125rem;
+  height: 2.125rem;
+}
+
+.bar.nav-bar {
   width: 66%;
   height: 5rem;
 }
@@ -22,6 +27,9 @@
 .nav-items {
   font-family: 'Barlow Condensed', sans-serif;
   height: 100%;
+}
+
+.bar.nav-bar .nav-items {
   margin: 0 19% 0 14%;
 }
 
