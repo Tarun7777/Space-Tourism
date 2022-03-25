@@ -6,8 +6,12 @@ import './index.css';
 const Home = () => {
   return (
     <section className='home'>
-      <WelcomeText />
-      <Button />
+      <div className='home--left-panel'>
+        <WelcomeText />
+      </div>
+      <div className='home--right-panel'>
+        <Button />
+      </div>
     </section>
   );
 };

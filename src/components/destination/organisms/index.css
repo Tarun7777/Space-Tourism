@@ -1,8 +1,3 @@
-.home {
-  display: flex;
-  padding: 10rem 0;
-}
-
 .home--left-panel {
   width: 50%;
 }
@@ -15,10 +10,6 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .home {
-    flex-direction: column;
-    padding: 6rem 1.5em;
-  }
   .home--left-panel {
     width: 100%;
     text-align: center;
@@ -31,9 +22,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .home {
-    padding: 3rem 1.5rem;
-  }
   .home--right-panel {
     margin-top: 5rem;
   }
