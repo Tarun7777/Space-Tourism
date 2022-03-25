@@ -1,3 +1,15 @@
-.destination--heading {
-    margin: 2.3125rem 0 1rem;
+.destination--name {
+  margin: 2.3125rem 0 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .destination--description {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .destination--name {
+    margin: 1.25rem 0 0;
+  }
 }

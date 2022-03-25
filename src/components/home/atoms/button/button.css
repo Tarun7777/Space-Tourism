@@ -33,4 +33,7 @@
     line-height: 22.3px;
     letter-spacing: 0.078rem;
   }
+  .explore-btn:hover {
+    box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.1);
+  }
 }

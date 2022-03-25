@@ -3,13 +3,13 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .header {
+  .header.header--main {
     margin-left: 2.5rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .header {
+  .header.header--main {
     margin: 0 1.5rem;
   }
 }

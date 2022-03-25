@@ -1,6 +1,6 @@
 .destination {
   display: flex;
-  padding: 4.75rem 0 10rem;
+  padding: 4.75rem 1rem 10rem;
 }
 
 .destination--left-panel {
@@ -13,19 +13,30 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .destination {
+    flex-direction: column;
+    padding: 2.5rem 2.5rem 6rem;
+  }
   .destination--left-panel {
     width: 100%;
-    text-align: center;
+    text-align: start;
   }
   .destination--right-panel {
     width: 100%;
-    margin-top: 10rem;
-    justify-content: center;
+    margin-top: 3.3125rem;
+    padding: 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .destination--left-panel {
+    text-align: center;
+  }
   .destination--right-panel {
-    margin-top: 5rem;
+    margin-top: 1.625rem;
+    padding: 0;
   }
 }

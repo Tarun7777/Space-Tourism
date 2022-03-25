@@ -5,8 +5,12 @@ import './Destination.css'
 const Destination = ({ name }) => {
   return (
     <>
-      <h2 className='destination--heading'>{content?.destination?.entries?.[name]?.name}</h2>
-      <p>{content?.destination?.entries?.[name]?.description}</p>
+      <h2 className='destination--name'>
+        {content?.destination?.entries?.[name]?.name}
+      </h2>
+      <p className='destination--description'>
+        {content?.destination?.entries?.[name]?.description}
+      </p>
     </>
   );
 };

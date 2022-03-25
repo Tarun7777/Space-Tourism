@@ -60,6 +60,11 @@ h5 span {
   h1 {
     line-height: 150px;
   }
+  h2 {
+    font-size: 5rem;
+    line-height: 92px;
+    text-transform: uppercase;
+  }
   h5 {
     font-size: 1.25rem;
     line-height: 24px;
@@ -76,13 +81,15 @@ h5 span {
     font-size: 5rem;
     line-height: 100px;
   }
+  h2 {
+    font-size: 3.5rem;
+    line-height: 64px;
+    text-transform: uppercase;
+  }
   h5 {
     font-size: 1rem;
     line-height: 19.2px;
     letter-spacing: 0.168rem;
-  }
-  p {
-    line-height: 28px;
   }
 }
 

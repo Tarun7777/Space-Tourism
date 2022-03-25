@@ -33,7 +33,9 @@ const LeftPanel = ({ name }) => {
         <span>{content?.main?.superHeadings?.destination?.prefix}</span>
         {content?.main?.superHeadings?.destination?.value}
       </h5>
-      <img src={getImage(name || 'Moon')} alt={name} />
+      <div className='destination--image'>
+        <img src={getImage(name || 'Moon')} alt={name} />
+      </div>
     </>
   );
 };
