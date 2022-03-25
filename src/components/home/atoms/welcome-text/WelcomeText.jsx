@@ -1,6 +1,6 @@
 import React from 'react';
-import { content } from '../../../../constants/content';
-import  './WelcomeText.css'
+import { content } from '../../../../constants';
+import './WelcomeText.css';
 
 const WelcomeText = () => {
   return (

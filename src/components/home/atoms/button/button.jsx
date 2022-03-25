@@ -1,5 +1,5 @@
 import React from 'react';
-import { content } from '../../../../constants/content';
+import { content } from '../../../../constants';
 import './button.css'
 
 const Button = () => {

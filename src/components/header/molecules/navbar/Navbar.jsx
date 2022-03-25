@@ -1,7 +1,7 @@
 import React from 'react';
-import { content } from '../../../../constants';
-import NavItem from '../../atoms/nav-item/NavItem';
 import NavbarToggler from '../../atoms/navbar-toggler/NavbarToggler';
+import NavItem from '../../atoms/nav-item/NavItem';
+import { content } from '../../../../constants';
 import './Navbar.css';
 
 const Navbar = ({
