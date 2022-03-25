@@ -1,23 +1,33 @@
-import { Route, Routes } from 'react-router-dom';
-import NavigationBar from './components/navigation-bar/NavigationBar';
-import Home from './components/home/organisms/index'
+import React from 'react';
+import { Route, Routes, useLocation, Navigate } from 'react-router-dom';
+import Header from './components/header/organisms/index';
+import Home from './components/home/organisms/index';
+import Destination from './components/destination/organisms/index';
+import { HOME } from './constants';
 import './App.css';
 
-function App() {
+const App = () => {
+  const route = useLocation().pathname;
+
   return (
-    <div id='app'>
-      <NavigationBar isMain />
+    <div id='app' className={`app--${route.split('/')[1] || HOME}`}>
+      <Header isMain />
       <div className='app--content'>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/destination' />
+          <Route path='' element={<Home />} />
+          <Route path='destination' element={<Destination />}>
+            <Route path='moon' />
+            <Route path='mars' />
+            <Route path='europa' />
+            <Route path='titan' />
+          </Route>
           <Route path='/crew' />
           <Route path='/technology' />
-          <Route path='*' />
+          <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </div>
     </div>
   );
-}
+};
 
 export default App;

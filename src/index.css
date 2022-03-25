@@ -5,6 +5,15 @@ h1 {
   font-weight: 400;
   font-size: 9.375rem;
   line-height: 172px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 6.25rem;
+  line-height: 115px;
+  text-transform: uppercase;
 }
 
 h5 {
@@ -13,18 +22,48 @@ h5 {
   font-size: 1.75rem;
   line-height: 34px;
   letter-spacing: 0.295rem;
+  text-transform: uppercase;
 }
 
 p {
+  color: rgb(208, 214, 249);
   font-family: 'Barlow', sans-serif;
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 32px;
 }
 
+p.sub-heading-1 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+p.sub-heading-2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 17px;
+  letter-spacing: 0.147rem;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+h5 span {
+  opacity: 0.25;
+  margin-right: 1rem;
+}
+
 @media only screen and (max-width: 1024px) {
   h1 {
     line-height: 150px;
+  }
+  h2 {
+    font-size: 5rem;
+    line-height: 92px;
+    text-transform: uppercase;
   }
   h5 {
     font-size: 1.25rem;
@@ -42,13 +81,15 @@ p {
     font-size: 5rem;
     line-height: 100px;
   }
+  h2 {
+    font-size: 3.5rem;
+    line-height: 64px;
+    text-transform: uppercase;
+  }
   h5 {
     font-size: 1rem;
     line-height: 19.2px;
     letter-spacing: 0.168rem;
-  }
-  p {
-    line-height: 28px;
   }
 }
 
