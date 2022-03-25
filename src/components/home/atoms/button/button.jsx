@@ -5,7 +5,7 @@ import './button.css';
 const Button = () => {
   return (
     <button className='explore-btn'>
-      {content?.home?.common?.buttonName.toUpperCase?.()}
+      {content?.home?.common?.buttonName}
     </button>
   );
 };
