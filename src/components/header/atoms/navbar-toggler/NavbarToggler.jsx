@@ -7,7 +7,7 @@ const NavToggler = ({ isNavBarOpen, clickHandler }) => {
   return (
     <>
       <img
-        className='nav-toggler'
+        className={`nav-toggler ${isNavBarOpen ? 'nav-toggler--close' : ''}`}
         onClick={clickHandler}
         src={isNavBarOpen ? Close : Hamburger}
         alt='Navigation bar toggler'

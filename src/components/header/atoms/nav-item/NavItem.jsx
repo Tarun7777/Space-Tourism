@@ -4,16 +4,16 @@ import './NavItem.css';
 
 const NavItem = ({ isMain, prefix, value, shouldDisplayPrefix, path }) => {
   return (
-    <li className='nav-item'>
+    <li className={`nav-item ${isMain ? 'main' : ''}`}>
       <NavLink
-        className={(navData) =>
-          navData.isActive ? `${isMain ? 'main' : ''} active` : ''
-        }
-        to={`${path}/${
-          value !== 'Home' ? value.toLowerCase() : ''
-        }`}
+        className={(navData) => (navData.isActive ? 'active' : '')}
+        to={`${path}/${value !== 'Home' ? value.toLowerCase() : ''}`}
       >
-        {shouldDisplayPrefix && <span>{prefix}</span>}
+        {shouldDisplayPrefix && (
+          <span className={`${prefix ? 'nav-item--prefix' : ''}`}>
+            {prefix}
+          </span>
+        )}
         {value}
       </NavLink>
     </li>

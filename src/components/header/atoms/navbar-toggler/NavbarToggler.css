@@ -2,5 +2,12 @@
   height: 1.5rem;
   width: 1.5rem;
   cursor: pointer;
-  z-index: 1;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-toggler--close {
+    position: fixed;
+    right: 1.5rem;
+  }
 }

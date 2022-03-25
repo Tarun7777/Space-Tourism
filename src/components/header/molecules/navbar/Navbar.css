@@ -6,6 +6,7 @@
 .bar.nav-bar {
   width: 66%;
   height: 5rem;
+  z-index: 1;
 }
 
 .apply-background {
@@ -30,19 +31,20 @@
 }
 
 .bar.nav-bar .nav-items {
-  margin: 0 19% 0 14%;
+  justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 1024px) {
   .nav-bar {
+    width: 17.8125rem;
+    height: 2.125rem;
+  }
+  .bar.nav-bar {
     width: 70%;
   }
   .bar::before {
     height: 0px;
     width: 0%;
-  }
-  .nav-items {
-    margin: 0 3rem;
   }
 }
 
