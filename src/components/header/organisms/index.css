@@ -1,18 +1,16 @@
-.header.header--main {
+.app--header {
   margin-left: 3.5rem;
 }
 
 @media only screen and (max-width: 1024px) {
-  .header.header--main {
+  .app--header {
     margin-left: 2.5rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .header {
+  .app--header {
     width: 90%;
-  }
-  .header.header--main {
     margin: 0 0.75rem;
   }
 }

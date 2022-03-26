@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <div id='app' className={`app--${route.split('/')[1] || HOME}`}>
-      <Header isMain />
+      <Header />
       <div className='app--content'>
         <SuperHeading />
         <Routes>

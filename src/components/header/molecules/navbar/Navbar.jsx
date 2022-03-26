@@ -1,41 +1,33 @@
 import React from 'react';
 import NavbarToggler from '../../atoms/navbar-toggler/NavbarToggler';
-import NavItem from '../../atoms/nav-item/NavItem';
+import NavItems from '../../atoms/nav-items/NavItems';
+import { useWindowDimensions } from '../../../../hooks/use-window-dimensions/useWindowDimensions';
+import { MOBILE_MAX_WIDTH, TABLET_MAX_WIDTH } from '../../../../constants';
 import './Navbar.css';
 
-const Navbar = ({
-  isMain,
-  isNavBarOpen,
-  clickHandler,
-  shouldDisplayNavToggler,
-  shouldDisplayPrefix,
-  navItems,
-  path,
-}) => {
+const Navbar = () => {
+  const { width } = useWindowDimensions();
+  const shouldDisplayPrefix =
+    width <= MOBILE_MAX_WIDTH || width > TABLET_MAX_WIDTH;
+  const shouldDisplayNavToggler = width <= MOBILE_MAX_WIDTH;
+
+  const [isNavBarOpen, toggleNavBar] = React.useState(false);
+
+  const clickHandler = () => {
+    toggleNavBar((prevValue) => !prevValue);
+  };
+
   return (
     <>
-      {isMain && shouldDisplayNavToggler && (
+      {shouldDisplayNavToggler && (
         <NavbarToggler
           isNavBarOpen={isNavBarOpen}
           clickHandler={clickHandler}
         />
       )}
-      {(!isMain || !shouldDisplayNavToggler || isNavBarOpen) && (
-        <nav className={`${isMain ? 'apply-background bar ' : ''} nav-bar`}>
-          <ul className='nav-items flex'>
-            {navItems.map((item, index) => (
-              <NavItem
-                key={index}
-                isMain={isMain}
-                prefix={item?.prefix}
-                value={item?.value}
-                id={item?.id}
-                name={item?.name}
-                shouldDisplayPrefix={shouldDisplayPrefix}
-                path={path}
-              />
-            ))}
-          </ul>
+      {(!shouldDisplayNavToggler || isNavBarOpen) && (
+        <nav className='app--navbar'>
+          <NavItems shouldDisplayPrefix={shouldDisplayPrefix} />
         </nav>
       )}
     </>

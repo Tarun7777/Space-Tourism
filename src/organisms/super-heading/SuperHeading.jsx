@@ -7,8 +7,12 @@ const SuperHeading = () => {
   const route = useLocation().pathname.split('/')[1] || HOME;
 
   return (
-    <h5 className={`app--super-heading ${route === HOME ? 'home--super-heading' : ''}`}>
-      <span className='super-heading--prefix'>
+    <h5
+      className={`app--super-heading ${
+        route === HOME ? 'home--super-heading' : ''
+      }`}
+    >
+      <span className='prefix'>
         {content?.main?.superHeadings?.[route]?.prefix}
       </span>
       {content?.main?.superHeadings?.[route]?.value}

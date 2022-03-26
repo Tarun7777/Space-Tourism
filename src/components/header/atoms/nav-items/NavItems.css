@@ -1,0 +1,16 @@
+.app--nav-items {
+  height: 100%;
+  width: 33.875rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600px) {
+  .app-nav-items {
+    height: 8.75rem;
+    margin: 7.5rem 0 0 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
