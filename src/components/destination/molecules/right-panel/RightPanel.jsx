@@ -4,15 +4,16 @@ import Header from '../../../header/organisms/index';
 import DestinationDetails from '../../atoms/destination-detail/DestinationDetails';
 import Destination from '../../atoms/destination/Destination';
 
-const RightPanel = ({ name }) => {
+const RightPanel = () => {
+  
   return (
     <>
       <Header
         navItems={content?.main?.destinationNavItems}
         path='/destination'
       />
-      <Destination name={name} />
-      <DestinationDetails name={name} />
+      <Destination />
+      <DestinationDetails />
     </>
   );
 };

@@ -26,9 +26,18 @@ a {
   width: 100%;
 }
 
-.active,
+.active {
+  border-bottom: 3px solid #ffffff !important;
+  color: #ffffff !important;
+}
+
+.main a:hover {
+  color: #ffffff;
+}
+
 a:hover {
-  border-bottom: 3px solid #ffffff;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  color: #D0D6F9;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -46,9 +55,14 @@ a:hover {
   .main.nav-item {
     width: 100%;
   }
-  .main .active,
+  .main .active {
+    border-right: 3px solid #ffffff !important
+    ;
+    border-bottom: 0px !important;
+  }
+
   .main a:hover {
-    border-right: 3px solid #ffffff;
+    border-right: 3px solid rgba(255, 255, 255, 0.5);
     border-bottom: 0px;
   }
 }

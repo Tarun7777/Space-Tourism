@@ -3,6 +3,7 @@ import { Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import Header from './components/header/organisms/index';
 import Home from './components/home/organisms/index';
 import Destination from './components/destination/organisms/index';
+import Crew from './components/crew/organisms/index'
 import { HOME } from './constants';
 import './App.css';
 
@@ -21,7 +22,7 @@ const App = () => {
             <Route path='europa' />
             <Route path='titan' />
           </Route>
-          <Route path='/crew' />
+          <Route path='/crew' element={<Crew />}/>
           <Route path='/technology' />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>

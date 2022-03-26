@@ -56,6 +56,11 @@ h5 span {
   margin-right: 1rem;
 }
 
+.super-heading--prefix span {
+  font-weight: 700;
+  margin-right: 0.375rem;
+}
+
 @media only screen and (max-width: 1024px) {
   h1 {
     line-height: 150px;

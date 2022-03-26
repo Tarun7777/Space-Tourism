@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Moon from '../../../../assets/destination/image-moon.png';
 import Mars from '../../../../assets/destination/image-mars.png';
 import Europa from '../../../../assets/destination/image-europa.png';
@@ -26,15 +27,18 @@ const getImage = (name) => {
   return image;
 };
 
-const LeftPanel = ({ name }) => {
+const LeftPanel = () => {
+  const { destination } = useSelector((state) => state);
   return (
     <>
       <h5 className='destination--super-heading'>
-        <span>{content?.main?.superHeadings?.destination?.prefix}</span>
+        <span className='super-heading--prefix'>
+          {content?.main?.superHeadings?.destination?.prefix}
+        </span>
         {content?.main?.superHeadings?.destination?.value}
       </h5>
       <div className='destination--image'>
-        <img src={getImage(name || 'Moon')} alt={name} />
+        <img src={getImage(destination)} alt={destination} />
       </div>
     </>
   );
