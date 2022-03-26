@@ -1,0 +1,23 @@
+.crew--nav-item {
+    display: contents;
+}
+
+.crew--nav-item button {
+    width: 1rem;
+    height: 1rem;
+    background: rgba(255, 255, 255, 0.17);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.crew--nav-item button.active {
+    background: #ffffff;
+}
+
+@media only screen and (max-width: 1024px) {
+    .crew--nav-item button {
+        width: 0.625rem;
+        height: 0.625rem;
+    }
+}

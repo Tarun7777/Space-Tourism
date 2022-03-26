@@ -1,0 +1,11 @@
+.crew--nav-items {
+  width: 8.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1024px) {
+    .crew--nav-items {
+        width: 5.5rem;
+    }
+}

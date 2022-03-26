@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { CREW, DESTINATION, TECHNOLOGY } from '../../constants';
 
-const initialState = { destination: 'moon', crew: '', technology: '' };
+const initialState = { destination: 'moon', crewId: '1', technologyId: '' };
 
 const spaceTourismSlice = createSlice({
   name: 'SpaceTourism',
@@ -16,10 +16,11 @@ const spaceTourismSlice = createSlice({
           state.destination = value;
           break;
         case CREW:
-          state.crew = value;
+          console.log(value);
+          state.crewId = value;
           break;
         case TECHNOLOGY:
-          state.technology = value;
+          state.technologyId = value;
           break;
         default:
       }

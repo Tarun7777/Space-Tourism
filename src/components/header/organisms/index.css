@@ -9,7 +9,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .header {
+    width: 90%;
+  }
   .header.header--main {
-    margin: 0 1.5rem;
+    margin: 0 0.75rem;
   }
 }

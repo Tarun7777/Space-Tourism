@@ -4,7 +4,7 @@ import Moon from '../../../../assets/destination/image-moon.png';
 import Mars from '../../../../assets/destination/image-mars.png';
 import Europa from '../../../../assets/destination/image-europa.png';
 import Titan from '../../../../assets/destination/image-titan.png';
-import { content, EUROPA, MARS, MOON, TITAN } from '../../../../constants';
+import { EUROPA, MARS, MOON, TITAN } from '../../../../constants';
 import './LeftPanel.css';
 
 const getImage = (name) => {
@@ -31,12 +31,6 @@ const LeftPanel = () => {
   const { destination } = useSelector((state) => state);
   return (
     <>
-      <h5 className='destination--super-heading'>
-        <span className='super-heading--prefix'>
-          {content?.main?.superHeadings?.destination?.prefix}
-        </span>
-        {content?.main?.superHeadings?.destination?.value}
-      </h5>
       <div className='destination--image'>
         <img src={getImage(destination)} alt={destination} />
       </div>

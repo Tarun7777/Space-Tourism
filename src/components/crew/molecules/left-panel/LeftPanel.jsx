@@ -1,14 +1,13 @@
 import React from 'react';
-import { content } from '../../../../constants';
+import CrewDetails from '../../atoms/crew-details/CrewDetails';
+import CrewNavbar from '../crew-navbar/CrewNavbar';
 import './LeftPanel.css';
 
 const LeftPanel = ({ name }) => {
   return (
     <>
-      <h5 className='destination--super-heading'>
-        <span>{content?.main?.superHeadings?.destination?.prefix}</span>
-        {content?.main?.superHeadings?.destination?.value}
-      </h5>
+      <CrewDetails />
+      <CrewNavbar />
     </>
   );
 };

@@ -6,14 +6,17 @@ import Destination from './components/destination/organisms/index';
 import Crew from './components/crew/organisms/index';
 import { HOME } from './constants';
 import './App.css';
+import SuperHeading from './organisms/super-heading/SuperHeading';
 
 const App = () => {
   const route = useLocation().pathname;
+  console.log(process.env);
 
   return (
     <div id='app' className={`app--${route.split('/')[1] || HOME}`}>
       <Header isMain />
       <div className='app--content'>
+        <SuperHeading />
         <Routes>
           <Route path='' element={<Home />} />
           <Route path='destination' element={<Destination />} />
