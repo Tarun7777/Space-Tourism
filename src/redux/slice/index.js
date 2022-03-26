@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { CREW, DESTINATION, TECHNOLOGY } from '../../constants';
 
-const initialState = { destination: 'moon', crewId: '1', technologyId: '' };
+const initialState = { destinationId: '1', crewId: '1', technologyId: '' };
 
 const spaceTourismSlice = createSlice({
   name: 'SpaceTourism',
@@ -9,18 +9,17 @@ const spaceTourismSlice = createSlice({
   reducers: {
     updateEntry: (state, action) => {
       const {
-        payload: { type, value },
+        payload: { type, id },
       } = action;
       switch (type) {
         case DESTINATION:
-          state.destination = value;
+          state.destinationId = id;
           break;
         case CREW:
-          console.log(value);
-          state.crewId = value;
+          state.crewId = id;
           break;
         case TECHNOLOGY:
-          state.technologyId = value;
+          state.technologyId = id;
           break;
         default:
       }

@@ -5,13 +5,9 @@ import DestinationDetails from '../../atoms/destination-detail/DestinationDetail
 import Destination from '../../atoms/destination/Destination';
 
 const RightPanel = () => {
-  
   return (
     <>
-      <Header
-        navItems={content?.main?.destinationNavItems}
-        path='/destination'
-      />
+      <Header navItems={content?.destination?.entries} path='/destination' />
       <Destination />
       <DestinationDetails />
     </>

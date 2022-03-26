@@ -4,14 +4,14 @@ import { content } from '../../../../constants';
 import './Destination.css';
 
 const Destination = () => {
-  const { destination } = useSelector((state) => state);
+  const { destinationId } = useSelector((state) => state);
   return (
     <>
       <h2 className='destination--name'>
-        {content?.destination?.entries?.[destination]?.name}
+        {content?.destination?.entries?.[destinationId - 1]?.name}
       </h2>
       <p className='destination--description'>
-        {content?.destination?.entries?.[destination]?.description}
+        {content?.destination?.entries?.[destinationId - 1]?.description}
       </p>
     </>
   );

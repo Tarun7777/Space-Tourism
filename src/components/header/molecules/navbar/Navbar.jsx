@@ -10,7 +10,7 @@ const Navbar = ({
   shouldDisplayNavToggler,
   shouldDisplayPrefix,
   navItems,
-  path
+  path,
 }) => {
   return (
     <>
@@ -27,9 +27,10 @@ const Navbar = ({
               <NavItem
                 key={index}
                 isMain={isMain}
-                index={index}
                 prefix={item?.prefix}
                 value={item?.value}
+                id={item?.id}
+                name={item?.name}
                 shouldDisplayPrefix={shouldDisplayPrefix}
                 path={path}
               />

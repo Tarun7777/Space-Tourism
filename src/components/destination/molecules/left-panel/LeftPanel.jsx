@@ -1,38 +1,28 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Moon from '../../../../assets/destination/image-moon.png';
-import Mars from '../../../../assets/destination/image-mars.png';
-import Europa from '../../../../assets/destination/image-europa.png';
-import Titan from '../../../../assets/destination/image-titan.png';
-import { EUROPA, MARS, MOON, TITAN } from '../../../../constants';
+import { content } from '../../../../constants';
 import './LeftPanel.css';
 
-const getImage = (name) => {
-  let image;
-  switch (name) {
-    case MOON:
-      image = Moon;
-      break;
-    case MARS:
-      image = Mars;
-      break;
-    case EUROPA:
-      image = Europa;
-      break;
-    case TITAN:
-      image = Titan;
-      break;
-    default:
-  }
-  return image;
+const getName = (id, format = false) => {
+  const name = content?.destination?.entries?.[id - 1]?.name;
+  return format ? name.toLowerCase?.().replace(' ', '-') : name;
 };
 
 const LeftPanel = () => {
-  const { destination } = useSelector((state) => state);
+  const { destinationId } = useSelector((state) => state);
+  const [imageSrc, setImageSrc] = React.useState('');
+  const name = getName(destinationId, true);
+
+  React.useEffect(() => {
+    import(`../../../../assets/destination/image-${name}.png`).then((image) => {
+      setImageSrc(image.default);
+    });
+  }, [name, setImageSrc]);
+
   return (
     <>
       <div className='destination--image'>
-        <img src={getImage(destination)} alt={destination} />
+        <img src={imageSrc} alt={getName(destinationId)} />
       </div>
     </>
   );

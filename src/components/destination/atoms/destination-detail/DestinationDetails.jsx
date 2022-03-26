@@ -4,7 +4,7 @@ import { content } from '../../../../constants';
 import './DestinationDetails.css';
 
 const DestinationDetail = () => {
-  const { destination } = useSelector((state) => state);
+  const { destinationId } = useSelector((state) => state);
 
   return (
     <>
@@ -15,7 +15,7 @@ const DestinationDetail = () => {
             {content?.destination?.common?.avgDistance}
           </p>
           <p className='sub-heading-1'>
-            {content?.destination?.entries?.[destination]?.distance}
+            {content?.destination?.entries?.[destinationId - 1]?.distance}
           </p>
         </div>
         <div>
@@ -23,7 +23,7 @@ const DestinationDetail = () => {
             {content?.destination?.common?.estTravelTime}
           </p>
           <p className='sub-heading-1'>
-            {content?.destination?.entries?.[destination]?.travel}
+            {content?.destination?.entries?.[destinationId - 1]?.travel}
           </p>
         </div>
       </div>

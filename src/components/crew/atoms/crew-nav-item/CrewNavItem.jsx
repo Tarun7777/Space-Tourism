@@ -9,7 +9,7 @@ const CrewNavItem = ({ id }) => {
   const { crewId } = useSelector((state) => state);
 
   const clickHandler = (id) => {
-    dispatch(spaceTourismActions.updateEntry({ type: CREW, value: id }));
+    dispatch(spaceTourismActions.updateEntry({ type: CREW, id }));
   };
 
   return (

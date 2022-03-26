@@ -5,11 +5,12 @@ import { DESTINATION } from '../../../../constants';
 import { spaceTourismActions } from '../../../../redux/slice';
 import './NavItem.css';
 
-const NavItem = ({ isMain, prefix, value, shouldDisplayPrefix, path }) => {
+const NavItem = ({ isMain, prefix, value, id, name, shouldDisplayPrefix, path }) => {
   const dispatch = useDispatch();
-  const { destination } = useSelector((state) => state);
-  const clickHandler = (value) => {
-    dispatch(spaceTourismActions.updateEntry({ type: DESTINATION, value }));
+  const { destinationId } = useSelector((state) => state);
+  const clickHandler = (id) => {
+    console.log(id)
+    dispatch(spaceTourismActions.updateEntry({ type: DESTINATION, id }));
   };
 
   return (
@@ -29,14 +30,11 @@ const NavItem = ({ isMain, prefix, value, shouldDisplayPrefix, path }) => {
       ) : (
         <button
           onClick={() => {
-            clickHandler(value.toLowerCase());
+            clickHandler(id);
           }}
-          className={`${destination === value.toLowerCase() ? 'active' : ''}`}
+          className={`${destinationId === id ? 'active' : ''}`}
         >
-          <span className={`${prefix ? 'nav-item--prefix' : ''}`}>
-            {prefix}
-          </span>
-          {value}
+          {name}
         </button>
       )}
     </li>

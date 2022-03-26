@@ -4,24 +4,19 @@ import { content, MOBILE_MAX_WIDTH } from '../../../../constants';
 import { useWindowDimensions } from '../../../../hooks/use-window-dimensions/useWindowDimensions';
 import './RightPanel.css';
 
-const getName = (id) => {
+const getName = (id, format = false) => {
   const name = content?.crew?.entries?.[id - 1]?.name;
-  return name.toLowerCase?.().replace(' ', '-');
+  return format ? name.toLowerCase?.().replace(' ', '-') : name;
 };
 
-const getImageHeight = (id) => {
-  let height = '90%';
-  if (id === '1') height = '100%';
-  // if(id === '4') height = '90%'
-  return height;
-};
+const getImageHeight = (id) => (id === '1' ? '100%' : '90%');
 
 const RightPanel = () => {
   const { width } = useWindowDimensions();
-  const shouldApplyInlineImgHeight = width > MOBILE_MAX_WIDTH;
   const { crewId } = useSelector((state) => state);
   const [imageSrc, setImageSrc] = React.useState('');
-  const name = getName(crewId);
+  const name = getName(crewId, true);
+  const shouldApplyInlineImgHeight = width > MOBILE_MAX_WIDTH;
 
   React.useEffect(() => {
     import(`../../../../assets/crew/image-${name}.png`).then((image) => {
@@ -36,7 +31,7 @@ const RightPanel = () => {
           height: `${shouldApplyInlineImgHeight ? getImageHeight(crewId) : ''}`,
         }}
         src={imageSrc}
-        alt='douglas'
+        alt={getName(crewId)}
       />
     </div>
   );
