@@ -9,7 +9,6 @@ const NavItem = ({ isMain, prefix, value, id, name, shouldDisplayPrefix, path })
   const dispatch = useDispatch();
   const { destinationId } = useSelector((state) => state);
   const clickHandler = (id) => {
-    console.log(id)
     dispatch(spaceTourismActions.updateEntry({ type: DESTINATION, id }));
   };
 

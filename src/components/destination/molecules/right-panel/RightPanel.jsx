@@ -1,13 +1,12 @@
 import React from 'react';
-import { content } from '../../../../constants';
-import Header from '../../../header/organisms/index';
-import DestinationDetails from '../../atoms/destination-detail/DestinationDetails';
+import DestinationNavbar from '../destination-navbar/DestinationNavbar';
 import Destination from '../../atoms/destination/Destination';
+import DestinationDetails from '../../atoms/destination-detail/DestinationDetails';
 
 const RightPanel = () => {
   return (
     <>
-      <Header navItems={content?.destination?.entries} path='/destination' />
+      <DestinationNavbar />
       <Destination />
       <DestinationDetails />
     </>

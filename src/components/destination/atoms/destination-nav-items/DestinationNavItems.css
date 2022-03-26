@@ -1,0 +1,13 @@
+.destination--nav-items {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+@media only screen and (max-width: 1024px) {
+  .destination--nav-items {
+    justify-content: space-evenly;
+  }
+}

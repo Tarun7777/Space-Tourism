@@ -1,0 +1,28 @@
+.destination--nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.destination--nav-item button {
+  text-decoration: none;
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.destination--nav-item button:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  color: #d0d6f9;
+}
+
+.destination--nav-item button.active {
+  border-bottom: 3px solid #ffffff !important;
+  color: #ffffff !important;
+}

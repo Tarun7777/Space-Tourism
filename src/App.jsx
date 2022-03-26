@@ -10,7 +10,6 @@ import SuperHeading from './organisms/super-heading/SuperHeading';
 
 const App = () => {
   const route = useLocation().pathname;
-  console.log(process.env);
 
   return (
     <div id='app' className={`app--${route.split('/')[1] || HOME}`}>
