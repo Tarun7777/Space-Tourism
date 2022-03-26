@@ -1,16 +1,16 @@
 import React from 'react';
-import Button from '../atoms/button/button';
-import WelcomeText from '../atoms/welcome-text/WelcomeText';
+import LeftPanel from '../atoms/left-panel/LeftPanel';
+import RightPanel from '../atoms/right-panel/RightPanel';
 import './index.css';
 
 const Home = () => {
   return (
     <section className='home'>
       <div className='home--left-panel'>
-        <WelcomeText />
+        <LeftPanel />
       </div>
       <div className='home--right-panel'>
-        <Button />
+        <RightPanel />
       </div>
     </section>
   );
