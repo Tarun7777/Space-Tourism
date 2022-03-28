@@ -1,7 +1,7 @@
 import React from 'react';
 import DestinationNavItem from '../destination-nav-item/DestinationNavItem';
 import { content } from '../../../../constants';
-import './DestinationNavItems.css';
+import './DestinationNavItems.scoped.scss';
 
 const DestinationNavItems = () => {
   const items = content?.destination?.entries;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useImageSrcProvider } from '../../../../hooks/image-src-provider/useImageSrcProvider';
 import { DESTINATION } from '../../../../constants';
-import './LeftPanel.css';
+import './LeftPanel.scoped.scss';
 
 const imageDetails = {
   pageName: DESTINATION,

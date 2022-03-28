@@ -1,7 +1,7 @@
 import React from 'react';
 import LeftPanel from '../molecules/left-panel/LeftPanel';
 import RightPanel from '../molecules/right-panel/RightPanel';
-import './index.css';
+import './index.scoped.scss';
 
 const Destination = () => {
   return (

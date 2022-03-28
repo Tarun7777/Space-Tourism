@@ -1,6 +1,6 @@
 import React from 'react';
 import DestinationNavItems from '../../atoms/destination-nav-items/DestinationNavItems';
-import './DestinationNavbar.css';
+import './DestinationNavbar.scoped.scss';
 
 const DestinationNavbar = () => {
   return (

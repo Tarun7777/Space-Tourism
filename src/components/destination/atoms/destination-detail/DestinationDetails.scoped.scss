@@ -1,0 +1,43 @@
+@import '../../../../global/tokens.scss';
+
+hr {
+  height: 1px;
+  background: rgb(56, 59, 75);
+  border: $token-border-none;
+  margin: 3.375rem $token-spacing-0 $token-spacing-7;
+}
+
+.destination {
+  &--details {
+    display: flex;
+
+    div {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  hr {
+    margin-top: 3.125rem;
+    width: 100%;
+  }
+  .destination {
+    &--details {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .destination {
+    &--details {
+      flex-direction: column;
+      align-items: center;
+    }
+    div:nth-child(2) {
+      margin-top: $token-spacing-8;
+    }
+  }
+}

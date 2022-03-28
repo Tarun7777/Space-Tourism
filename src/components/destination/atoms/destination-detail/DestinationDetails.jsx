@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { content } from '../../../../constants';
-import './DestinationDetails.css';
+import './DestinationDetails.scoped.scss';
 
 const DestinationDetail = () => {
   const { destinationId } = useSelector((state) => state);
