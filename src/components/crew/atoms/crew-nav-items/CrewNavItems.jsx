@@ -1,7 +1,7 @@
 import React from 'react';
 import CrewNavItem from '../crew-nav-item/CrewNavItem';
 import { content } from '../../../../constants';
-import './CrewNavItems.css';
+import './CrewNavItems.scoped.scss';
 
 const CrewNavItems = () => {
   const items = content?.crew?.entries;

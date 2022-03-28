@@ -1,0 +1,49 @@
+@import '../../../global/tokens.scss';
+
+.crew {
+  display: flex;
+  justify-content: space-between;
+  padding: $token-spacing-0 $token-spacing-4;
+
+  &--left-panel,
+  &--right-panel {
+    width: 50%;
+  }
+  &--right-panel hr {
+    margin: $token-spacing-0;
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .crew {
+    flex-direction: column;
+    padding: $token-spacing-0 $token-spacing-10 $token-spacing-0;
+
+    &--left-panel,
+    &--right-panel {
+      width: 100%;
+    }
+    &--right-panel {
+      margin-top: $token-spacing-10;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .crew {
+    flex-direction: column-reverse;
+
+    &--left-panel,
+    &--right-panel {
+      display: flex;
+    }
+    &--left-panel {
+      flex-direction: column-reverse;
+      margin-bottom: $token-spacing-20;
+    }
+    &--right-panel {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { content } from '../../../../constants';
-import './CrewDetails.css';
+import './CrewDetails.scoped.scss';
 
 const CrewDetails = () => {
   const { crewId } = useSelector((state) => state);

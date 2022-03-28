@@ -1,0 +1,31 @@
+@import '../../../../global/tokens.scss';
+
+.crew {
+  &--nav-item {
+    display: contents;
+
+    button {
+      height: 1rem;
+      width: 1rem;
+      background: rgba(255, 255, 255, 0.17);
+      border: $token-border-none;
+      border-radius: $token-border-radius-primary;
+      cursor: pointer;
+
+      &.active {
+        background: $token-background-primary;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .crew {
+    &--nav-item {
+      button {
+        height: 0.625rem;
+        width: 0.625rem;
+      }
+    }
+  }
+}

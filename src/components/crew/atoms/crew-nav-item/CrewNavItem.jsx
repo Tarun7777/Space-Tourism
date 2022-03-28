@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { spaceTourismActions } from '../../../../redux/slice';
 import { CREW } from '../../../../constants';
-import './CrewNavItem.css';
+import './CrewNavItem.scoped.scss';
 
 const CrewNavItem = ({ id }) => {
   const dispatch = useDispatch();

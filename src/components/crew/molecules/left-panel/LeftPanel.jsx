@@ -1,7 +1,6 @@
 import React from 'react';
 import CrewDetails from '../../atoms/crew-details/CrewDetails';
 import CrewNavbar from '../crew-navbar/CrewNavbar';
-import './LeftPanel.css';
 
 const LeftPanel = ({ name }) => {
   return (

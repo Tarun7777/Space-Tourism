@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { useImageSrcProvider } from '../../../../hooks/image-src-provider/useImageSrcProvider';
 import { useWindowDimensions } from '../../../../hooks/window-dimensions/useWindowDimensions';
 import { CREW, MOBILE_MAX_WIDTH } from '../../../../constants';
-import './RightPanel.css';
+import './RightPanel.scoped.scss';
 
 const imageDetails = {
   pageName: CREW,

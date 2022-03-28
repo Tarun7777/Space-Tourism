@@ -1,6 +1,6 @@
 import React from 'react';
 import CrewNavItems from '../../atoms/crew-nav-items/CrewNavItems';
-import './CrewNavbar.css'
+import './CrewNavbar.scoped.scss'
 
 const CrewNavbar = () => {
   return (

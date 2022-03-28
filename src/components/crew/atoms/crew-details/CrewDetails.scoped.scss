@@ -1,0 +1,36 @@
+@import '../../../../global/tokens.scss';
+
+.crew {
+  &--details {
+    height: 21.1rem;
+    margin-top: 9.625rem;
+    overflow: auto;
+
+    h3 {
+      margin: $token-spacing-4 $token-spacing-0 $token-spacing-7;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .crew {
+    &--details {
+      height: 13.125rem;
+      margin-top: $token-spacing-15;
+      text-align: center;
+
+      h3 {
+        margin: $token-spacing-2 $token-spacing-0 $token-spacing-4;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .crew {
+    &--details {
+      height: unset;
+      margin-top: $token-spacing-0;
+    }
+  }
+}
