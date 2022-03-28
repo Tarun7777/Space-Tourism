@@ -1,6 +1,6 @@
 import React from 'react';
 import { content } from '../../../../constants';
-import './LeftPanel.css';
+import './LeftPanel.scoped.scss';
 
 const WelcomeText = () => {
   return (
