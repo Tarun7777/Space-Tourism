@@ -8,7 +8,7 @@ const CrewNavItem = ({ id }) => {
   const dispatch = useDispatch();
   const { crewId } = useSelector((state) => state);
 
-  const clickHandler = (id) => {
+  const clickHandler = () => {
     dispatch(spaceTourismActions.updateEntry({ type: CREW, id }));
   };
 
@@ -16,9 +16,7 @@ const CrewNavItem = ({ id }) => {
     <li className='crew--nav-item'>
       <button
         className={`${crewId === id ? 'active' : ''}`}
-        onClick={() => {
-          clickHandler(id);
-        }}
+        onClick={clickHandler}
       />
     </li>
   );

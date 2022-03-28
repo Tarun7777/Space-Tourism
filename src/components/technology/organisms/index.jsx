@@ -2,27 +2,26 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import LeftPanel from '../molecules/left-panel/LeftPanel';
 import RightPanel from '../molecules/right-panel/RightPanel';
-import { TITLE_CREW } from '../../../constants';
+import { TITLE_TECHNOLOGY } from '../../../constants';
 import './index.css';
 
-const Crew = () => {
+const Technology = () => {
   return (
     <>
       <Helmet>
-        <title>{TITLE_CREW}</title>
+        <title>{TITLE_TECHNOLOGY}</title>
       </Helmet>
-      <section className='crew'>
-        <div className='crew--left-panel'>
+      <div className='technology'>
+        <div className='technology--left-panel'>
           <LeftPanel />
         </div>
-        <div className='crew--right-panel'>
+        <div className='technology--right-panel'>
           <RightPanel />
-          <hr />
         </div>
-      </section>
+      </div>
     </>
   );
 };
 
-Crew.displayName = 'Crew';
-export default React.memo(Crew);
+Technology.displayName = 'Technology';
+export default React.memo(Technology);

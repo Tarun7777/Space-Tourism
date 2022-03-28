@@ -1,10 +1,16 @@
 import React from 'react';
-import { content } from '../../../../constants';
+import { useNavigate } from 'react-router-dom';
+import { content, DESTINATION } from '../../../../constants';
 import './RightPanel.css';
 
 const Button = () => {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    navigate(`/${DESTINATION}`);
+  };
+
   return (
-    <button className='explore-btn'>
+    <button onClick={clickHandler} className='explore-btn'>
       {content?.home?.common?.buttonName}
     </button>
   );

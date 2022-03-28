@@ -1,0 +1,21 @@
+.technology--nav-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 19rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .technology--nav-items {
+    display: flex;
+    flex-direction: row;
+    width: 13.125rem;
+    height: unset;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .technology--nav-items {
+    width: 9.5rem;
+  }
+}

@@ -8,7 +8,7 @@ const DestinationNavItem = ({ id, name }) => {
   const dispatch = useDispatch();
   const { destinationId } = useSelector((state) => state);
 
-  const clickHandler = (id) => {
+  const clickHandler = () => {
     dispatch(spaceTourismActions.updateEntry({ type: DESTINATION, id }));
   };
 
@@ -16,9 +16,7 @@ const DestinationNavItem = ({ id, name }) => {
     <li className='destination--nav-item nav-item--text'>
       <button
         className={`${destinationId === id ? 'active' : ''}`}
-        onClick={() => {
-          clickHandler(id);
-        }}
+        onClick={clickHandler}
       >
         {name}
       </button>

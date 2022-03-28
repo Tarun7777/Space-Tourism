@@ -1,0 +1,47 @@
+.technology--nav-item button {
+  height: 5rem;
+  width: 5rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  color: #ffffff;
+  border-radius: 50%;
+  mix-blend-mode: normal;
+  cursor: pointer;
+  font-family: 'Bellefair', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 37px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.technology--nav-item button:hover,
+.technology--nav-item button.active {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.technology--nav-item button.active {
+  background: #ffffff;
+  color: black;
+}
+
+@media only screen and (max-width: 1024px) {
+  .technology--nav-item button {
+    height: 3.75rem;
+    width: 3.75rem;
+    font-size: 1.5rem;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .technology--nav-item button {
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1rem;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
+}

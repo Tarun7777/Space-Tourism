@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { CREW, DESTINATION, TECHNOLOGY } from '../../constants';
 
-const initialState = { destinationId: '1', crewId: '1', technologyId: '' };
+const initialState = { destinationId: '1', crewId: '1', technologyId: '1' };
 
 const spaceTourismSlice = createSlice({
   name: 'SpaceTourism',

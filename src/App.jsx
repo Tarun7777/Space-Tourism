@@ -4,6 +4,7 @@ import Header from './components/header/organisms/index';
 import Home from './components/home/organisms/index';
 import Destination from './components/destination/organisms/index';
 import Crew from './components/crew/organisms/index';
+import Technology from './components/technology/organisms/index'
 import { HOME } from './constants';
 import './App.css';
 import SuperHeading from './organisms/super-heading/SuperHeading';
@@ -20,7 +21,7 @@ const App = () => {
           <Route path='' element={<Home />} />
           <Route path='destination' element={<Destination />} />
           <Route path='/crew' element={<Crew />} />
-          <Route path='/technology' />
+          <Route path='/technology' element={<Technology />} />
           <Route path='*' element={<Navigate to='/' replace />} />
         </Routes>
       </div>
