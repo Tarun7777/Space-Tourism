@@ -33,3 +33,18 @@ hr {
   justify-content: space-between;
   align-items: center;
 }
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+
+  &-track {
+    background: $token-scroll-bar-track-primary;
+  }
+  &-thumb {
+    background: $token-scroll-bar-thumb-primary;
+    border-radius: 100px;
+    &:hover {
+      background: $token-scroll-bar-thumb-hover-primary;
+    }
+  }
+}
