@@ -5,14 +5,12 @@ import './NavbarToggler.css';
 
 const NavToggler = ({ isNavBarOpen, clickHandler }) => {
   return (
-    <>
-      <img
-        className={`nav-toggler ${isNavBarOpen ? 'nav-toggler--close' : ''}`}
-        onClick={clickHandler}
-        src={isNavBarOpen ? Close : Hamburger}
-        alt='Navigation bar toggler'
-      />
-    </>
+    <img
+      className={`nav-toggler ${isNavBarOpen ? 'nav-toggler--close' : ''}`}
+      onClick={clickHandler}
+      src={isNavBarOpen ? Close : Hamburger}
+      alt='Navigation bar toggler'
+    />
   );
 };
 

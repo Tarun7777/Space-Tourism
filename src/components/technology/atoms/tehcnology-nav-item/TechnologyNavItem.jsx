@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { TECHNOLOGY } from '../../../../constants';
 import { spaceTourismActions } from '../../../../redux/slice';
+import { TECHNOLOGY } from '../../../../constants';
 import './TechnologyNavItem.css';
 
 const TechnologyNavItem = ({ id }) => {

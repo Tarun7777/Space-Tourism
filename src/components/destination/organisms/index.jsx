@@ -5,16 +5,14 @@ import './index.css';
 
 const Destination = () => {
   return (
-    <>
-      <section className='destination'>
-        <div className='destination--left-panel'>
-          <LeftPanel />
-        </div>
-        <div className='destination--right-panel'>
-          <RightPanel />
-        </div>
-      </section>
-    </>
+    <section className='destination'>
+      <div className='destination--left-panel'>
+        <LeftPanel />
+      </div>
+      <div className='destination--right-panel'>
+        <RightPanel />
+      </div>
+    </section>
   );
 };
 

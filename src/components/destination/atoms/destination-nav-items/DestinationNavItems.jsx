@@ -1,6 +1,6 @@
 import React from 'react';
-import { content } from '../../../../constants';
 import DestinationNavItem from '../destination-nav-item/DestinationNavItem';
+import { content } from '../../../../constants';
 import './DestinationNavItems.css';
 
 const DestinationNavItems = () => {

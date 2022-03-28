@@ -1,10 +1,11 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import { getLastSegmentOfPath } from '../../utils/utils';
 import { content, HOME } from '../../constants';
 import './SuperHeading.css';
 
 const SuperHeading = () => {
-  const route = useLocation().pathname.split('/')[1] || HOME;
+  const route = getLastSegmentOfPath(useLocation().pathname);
 
   return (
     <h5

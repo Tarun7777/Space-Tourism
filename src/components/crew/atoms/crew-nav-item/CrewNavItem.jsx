@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { CREW } from '../../../../constants';
 import { spaceTourismActions } from '../../../../redux/slice';
+import { CREW } from '../../../../constants';
 import './CrewNavItem.css';
 
 const CrewNavItem = ({ id }) => {

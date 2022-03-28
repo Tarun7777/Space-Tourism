@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { content, CREW, DESTINATION, TECHNOLOGY } from '../../constants';
 import { useWindowDimensions } from '../window-dimensions/useWindowDimensions';
+import { content, CREW, DESTINATION, TECHNOLOGY } from '../../constants';
 
 const getId = (pageName, idObj) => {
   let id;

@@ -6,12 +6,6 @@ export const content = {
       { prefix: '02 ', value: 'Crew' },
       { prefix: '03 ', value: 'Technology' },
     ],
-    destinationNavItems: [
-      { prefix: '', value: 'Moon' },
-      { prefix: '', value: 'Mars' },
-      { prefix: '', value: 'Europa' },
-      { prefix: '', value: 'Titan' },
-    ],
     superHeadings: {
       home: { prefix: '', value: 'So, you want to travel to' },
       destination: { prefix: '01 ', value: 'Pick your destination' },

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { DESTINATION } from '../../../../constants';
 import { spaceTourismActions } from '../../../../redux/slice';
+import { DESTINATION } from '../../../../constants';
 import './DestinationNavItem.css';
 
 const DestinationNavItem = ({ id, name }) => {

@@ -7,12 +7,11 @@ import Home from './components/home/organisms/index';
 import Destination from './components/destination/organisms/index';
 import Crew from './components/crew/organisms/index';
 import Technology from './components/technology/organisms/index';
-import { getTitle } from './utils/utils';
-import { HOME } from './constants';
+import { getLastSegmentOfPath, getTitle } from './utils/utils';
 import './App.css';
 
 const App = () => {
-  const route = useLocation().pathname.split('/')[1] || HOME;
+  const route = getLastSegmentOfPath(useLocation().pathname);
 
   return (
     <div id='app' className={`app--${route}`}>

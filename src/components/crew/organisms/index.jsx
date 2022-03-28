@@ -5,17 +5,15 @@ import './index.css';
 
 const Crew = () => {
   return (
-    <>
-      <section className='crew'>
-        <div className='crew--left-panel'>
-          <LeftPanel />
-        </div>
-        <div className='crew--right-panel'>
-          <RightPanel />
-          <hr />
-        </div>
-      </section>
-    </>
+    <section className='crew'>
+      <div className='crew--left-panel'>
+        <LeftPanel />
+      </div>
+      <div className='crew--right-panel'>
+        <RightPanel />
+        <hr />
+      </div>
+    </section>
   );
 };
 

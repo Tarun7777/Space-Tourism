@@ -5,16 +5,14 @@ import './index.css';
 
 const Technology = () => {
   return (
-    <>
-      <div className='technology'>
-        <div className='technology--left-panel'>
-          <LeftPanel />
-        </div>
-        <div className='technology--right-panel'>
-          <RightPanel />
-        </div>
+    <section className='technology'>
+      <div className='technology--left-panel'>
+        <LeftPanel />
       </div>
-    </>
+      <div className='technology--right-panel'>
+        <RightPanel />
+      </div>
+    </section>
   );
 };
 

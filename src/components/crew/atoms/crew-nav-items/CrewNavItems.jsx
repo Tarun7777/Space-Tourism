@@ -1,6 +1,6 @@
 import React from 'react';
-import { content } from '../../../../constants';
 import CrewNavItem from '../crew-nav-item/CrewNavItem';
+import { content } from '../../../../constants';
 import './CrewNavItems.css';
 
 const CrewNavItems = () => {

@@ -10,7 +10,7 @@ import {
 } from '../constants';
 
 export const getLastSegmentOfPath = (path) => {
-  return path.split('/')[2];
+  return path.split('/')[1] || HOME;
 };
 
 export const getTitle = (page) => {
