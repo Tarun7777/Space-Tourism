@@ -1,19 +1,22 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import Header from './components/header/organisms/index';
+import SuperHeading from './organisms/super-heading/SuperHeading';
 import Home from './components/home/organisms/index';
 import Destination from './components/destination/organisms/index';
 import Crew from './components/crew/organisms/index';
-import Technology from './components/technology/organisms/index'
+import Technology from './components/technology/organisms/index';
+import { getTitle } from './utils/utils';
 import { HOME } from './constants';
 import './App.css';
-import SuperHeading from './organisms/super-heading/SuperHeading';
 
 const App = () => {
-  const route = useLocation().pathname;
+  const route = useLocation().pathname.split('/')[1] || HOME;
 
   return (
-    <div id='app' className={`app--${route.split('/')[1] || HOME}`}>
+    <div id='app' className={`app--${route}`}>
+      <Helmet>{getTitle(route)}</Helmet>
       <Header />
       <div className='app--content'>
         <SuperHeading />
