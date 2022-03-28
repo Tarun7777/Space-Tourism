@@ -8,7 +8,7 @@ import Destination from './components/destination/organisms/index';
 import Crew from './components/crew/organisms/index';
 import Technology from './components/technology/organisms/index';
 import { getLastSegmentOfPath, getTitle } from './utils/utils';
-import './App.css';
+import './App.scoped.scss';
 
 const App = () => {
   const route = getLastSegmentOfPath(useLocation().pathname);

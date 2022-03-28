@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { getLastSegmentOfPath } from '../../utils/utils';
 import { content, HOME } from '../../constants';
-import './SuperHeading.css';
+import './SuperHeading.scoped.scss';
 
 const SuperHeading = () => {
   const route = getLastSegmentOfPath(useLocation().pathname);
