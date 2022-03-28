@@ -1,7 +1,6 @@
 import React from 'react';
 import TechnologyDetails from '../../atoms/technology-details/TechnologyDetails';
 import TechnologyNavbar from '../technology-navbar/TechnologyNavbar';
-import './LeftPanel.css';
 
 const LeftPanel = () => {
   return (

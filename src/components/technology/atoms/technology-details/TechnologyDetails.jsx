@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { content } from '../../../../constants';
-import './TechnologyDetails.css';
+import './TechnologyDetails.scoped.scss';
 
 const TechnologyDetails = () => {
   const { technologyId } = useSelector((state) => state);

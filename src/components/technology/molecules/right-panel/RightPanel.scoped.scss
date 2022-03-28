@@ -1,0 +1,32 @@
+@import '../../../../global/tokens.scss';
+
+.technology {
+  &--image {
+    img {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .technology {
+    &--image {
+      img {
+        height: 19.375rem;
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .technology {
+    &--image {
+      img {
+        height: 10.625rem;
+      }
+    }
+  }
+}

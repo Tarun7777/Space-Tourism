@@ -1,7 +1,7 @@
 import React from 'react';
 import { useImageSrcProvider } from '../../../../hooks/image-src-provider/useImageSrcProvider';
 import { TECHNOLOGY } from '../../../../constants';
-import './RightPanel.css';
+import './RightPanel.scoped.scss';
 
 const imageDetails = {
   pageName: TECHNOLOGY,

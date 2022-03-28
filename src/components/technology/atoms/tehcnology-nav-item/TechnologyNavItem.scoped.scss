@@ -1,0 +1,59 @@
+@import '../../../../global/mixins.scss';
+@import '../../../../global/tokens.scss';
+
+.technology {
+  &--nav-item {
+    button {
+      height: 5rem;
+      width: 5rem;
+      @include font-bellefair;
+      font-size: $token-font-size-8;
+      line-height: 37px;
+      letter-spacing: 2px;
+      text-align: center;
+      color: $token-text-color-primary;
+      background: transparent;
+      border: $token-border-secondary;
+      border-radius: $token-border-radius-primary;
+      mix-blend-mode: normal;
+      cursor: pointer;
+
+      &:hover,
+      &.active {
+        border: $token-border-secondary-active;
+      }
+      &.active {
+        color: $token-text-color-tertiary;
+        background: $token-text-color-primary;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .technology {
+    &--nav-item {
+      button {
+        height: 3.75rem;
+        width: 3.75rem;
+        font-size: $token-font-size-6;
+        line-height: 28px;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .technology {
+    &--nav-item {
+      button {
+        height: 2.5rem;
+        width: 2.5rem;
+        font-size: $token-font-size-4;
+        line-height: 18px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

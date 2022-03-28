@@ -49,8 +49,7 @@ $token-border-color-tertiary: rgba(255, 255, 255, 1);
 /*---------------------------- BACKGROUND ----------------------------*/
 
 $token-background-primary: rgba(255, 255, 255, 1);
-$token-background-secondary: transparent;
-$token-background-tertiary: rgba(0, 0, 0, 1);
+$token-background-secondary: rgba(0, 0, 0, 1);
 
 /*---------------------------- BORDERS ----------------------------*/
 
@@ -58,7 +57,7 @@ $token-border-none: none;
 $token-border-primary: 3px solid $token-border-color-primary;
 $token-border-primary-active: 3px solid $token-border-color-tertiary !important;
 $token-border-secondary: 1px solid $token-border-color-secondary;
-$token-border-secondary-active: 1px solid $token-border-color-tertiary !important;
+$token-border-secondary-active: 1px solid $token-border-color-tertiary;
 $token-border-radius-primary: 50%;
 
 /*---------------------------- PADDINGS & MARGINS ----------------------------*/
