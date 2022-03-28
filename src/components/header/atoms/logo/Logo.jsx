@@ -1,6 +1,6 @@
 import React from 'react';
 import LogoImg from '../../../../assets/shared/logo.ico';
-import './Logo.css';
+import './Logo.scoped.scss';
 
 const Logo = () => {
   return <img className='logo' src={LogoImg} alt='Logo' />;
