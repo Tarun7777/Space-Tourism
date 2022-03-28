@@ -1,0 +1,17 @@
+@import '../../../../global/tokens.scss';
+
+.nav-toggler {
+  height: 1.5rem;
+  width: 1.5rem;
+  z-index: 2;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-toggler {
+    &--close {
+      position: fixed;
+      right: 1.5rem;
+    }
+  }
+}

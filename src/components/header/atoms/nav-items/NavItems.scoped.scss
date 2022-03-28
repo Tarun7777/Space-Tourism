@@ -1,0 +1,28 @@
+@import '../../../../global//tokens.scss';
+
+.app {
+  &--nav-items {
+    height: 100%;
+    justify-content: space-evenly !important;
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .app {
+    &--nav-items {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .app {
+    &--nav-items {
+      height: 8.75rem;
+      margin-top: 7.5rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+}

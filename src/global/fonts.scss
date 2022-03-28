@@ -89,6 +89,17 @@ p.terminology {
   p {
     font-size: $token-font-size-4;
     line-height: 28px;
+
+    &.terminology {
+      font-size: $token-font-size-4;
+      line-height: 19px;
+      letter-spacing: 0.168rem;
+    }
+  }
+  .nav-item--text {
+    font-size: 0.875rem;
+    line-height: 17px;
+    letter-spacing: 0.148rem;
   }
 }
 
@@ -114,7 +125,11 @@ p.terminology {
     line-height: 19.2px;
     letter-spacing: 0.168rem;
   }
-  .nav-item--text,
+  .nav-item--text {
+    font-size: $token-font-size-4;
+    line-height: 19px;
+    letter-spacing: 0.168rem;
+  }
   p.terminology {
     font-size: 0.875rem;
     line-height: 17px;

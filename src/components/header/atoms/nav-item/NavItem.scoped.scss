@@ -1,0 +1,49 @@
+@import '../../../../global/tokens.scss';
+
+.app {
+  &--nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    a {
+      height: 100%;
+      width: 100%;
+      color: $token-text-color-primary;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        border-bottom: $token-border-primary;
+      }
+      &.active {
+        border-bottom: $token-border-primary-active;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .app {
+    &--nav-item {
+      width: 100%;
+      padding-left: $token-spacing-8;
+
+      a {
+        &:hover,
+        &.active {
+          border-bottom: $token-spacing-0 !important;
+        }
+
+        &:hover {
+          border-right: $token-border-primary;
+        }
+        &.active {
+          border-right: $token-border-primary-active;
+        }
+      }
+    }
+  }
+}

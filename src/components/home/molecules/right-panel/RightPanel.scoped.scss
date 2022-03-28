@@ -2,9 +2,9 @@
 @import '../../../../global/tokens.scss';
 
 .explore-btn {
-  color: $token-text-color-tertiary;
   height: 17.125rem;
   width: 17.125rem;
+  color: $token-text-color-tertiary;
   @include font-bellefair;
   font-size: $token-font-size-8;
   line-height: 37px;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../atoms/logo/Logo';
 import Navbar from '../molecules/navbar/Navbar';
-import './index.css';
+import './index.scoped.scss';
 
 const Header = () => {
   return (

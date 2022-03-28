@@ -3,7 +3,7 @@ import NavbarToggler from '../../atoms/navbar-toggler/NavbarToggler';
 import NavItems from '../../atoms/nav-items/NavItems';
 import { useWindowDimensions } from '../../../../hooks/window-dimensions/useWindowDimensions';
 import { MOBILE_MAX_WIDTH, TABLET_MAX_WIDTH } from '../../../../constants';
-import './Navbar.css';
+import './Navbar.scoped.scss';
 
 const Navbar = () => {
   const { width } = useWindowDimensions();

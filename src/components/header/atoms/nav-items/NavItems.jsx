@@ -1,7 +1,7 @@
 import React from 'react';
 import NavItem from '../nav-item/NavItem';
 import { content } from '../../../../constants';
-import './NavItems.css';
+import './NavItems.scoped.scss';
 
 const navItems = content?.main?.navItems;
 

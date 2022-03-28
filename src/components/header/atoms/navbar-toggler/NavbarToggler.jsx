@@ -1,7 +1,7 @@
 import React from 'react';
 import Close from '../../../../assets/shared/icon-close.ico';
 import Hamburger from '../../../../assets/shared/icon-hamburger.ico';
-import './NavbarToggler.css';
+import './NavbarToggler.scoped.scss';
 
 const NavToggler = ({ isNavBarOpen, clickHandler }) => {
   return (

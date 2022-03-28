@@ -1,0 +1,24 @@
+@import '../../../global/tokens.scss';
+
+.app {
+  &--header {
+    margin-left: $token-spacing-14;
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .app {
+    &--header {
+      margin-left: $token-spacing-10;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .app {
+    &--header {
+      width: 90%;
+      margin: $token-spacing-0 $token-spacing-3;
+    }
+  }
+}
