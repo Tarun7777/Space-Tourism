@@ -6,7 +6,7 @@ import './RightPanel.css';
 
 const getName = (id, format = false) => {
   const name = content?.crew?.entries?.[id - 1]?.name;
-  return format ? name.toLowerCase?.().replace(' ', '-') : name;
+  return format ? name?.toLowerCase().replace(' ', '-') : name;
 };
 
 const getImageHeight = (id) => (id === '1' ? '100%' : '90%');
