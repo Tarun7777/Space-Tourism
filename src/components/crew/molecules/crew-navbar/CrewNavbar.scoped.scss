@@ -1,0 +1,27 @@
+@import '../../../../global/tokens.scss';
+
+.crew {
+  &--navbar {
+    height: 1rem;
+    width: 100%;
+    margin: 7.5rem $token-spacing-0 5.875rem;
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .crew {
+    &--navbar {
+      display: flex;
+      justify-content: center;
+      margin: $token-spacing-10 $token-spacing-0;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .crew {
+    &--navbar {
+      margin: $token-spacing-8 $token-spacing-0 $token-spacing-8;
+    }
+  }
+}

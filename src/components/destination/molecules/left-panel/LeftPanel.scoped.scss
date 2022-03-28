@@ -1,0 +1,37 @@
+@import '../../../../global/tokens.scss';
+
+.destination {
+  &--super-heading {
+    margin-bottom: $token-spacing-24;
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .destination {
+    &--super-heading {
+      margin-bottom: $token-spacing-15;
+    }
+    &--image {
+      text-align: center;
+
+      img {
+        height: 18.75rem;
+        width: 18.75rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .destination {
+    &--super-heading {
+      margin-bottom: $token-spacing-8;
+    }
+    &--image {
+      img {
+        height: 10.625rem;
+        width: 10.625rem;
+      }
+    }
+  }
+}

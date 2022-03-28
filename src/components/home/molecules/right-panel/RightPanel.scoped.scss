@@ -1,0 +1,43 @@
+@import '../../../../global/mixins.scss';
+@import '../../../../global/tokens.scss';
+
+.explore-btn {
+  height: 17.125rem;
+  width: 17.125rem;
+  color: $token-text-color-tertiary;
+  @include font-bellefair;
+  font-size: $token-font-size-8;
+  line-height: 37px;
+  letter-spacing: 0.125rem;
+  border: none;
+  border-radius: $token-border-radius-primary;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    box-shadow: 0 0 0 5.5rem rgba(255, 255, 255, 0.1);
+    mix-blend-mode: normal;
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .explore-btn {
+    height: 15.125rem;
+    width: 15.125rem;
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .explore-btn {
+    height: 9.375rem;
+    width: 9.375rem;
+    font-size: $token-font-size-5;
+    line-height: 22.3px;
+    letter-spacing: 0.078rem;
+
+    &:hover,
+    &:active {
+      box-shadow: 0 0 0 3.5rem rgba(255, 255, 255, 0.1);
+    }
+  }
+}

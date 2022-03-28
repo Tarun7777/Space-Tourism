@@ -1,0 +1,13 @@
+@import '../../../../global/tokens.scss';
+
+.logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .logo {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}

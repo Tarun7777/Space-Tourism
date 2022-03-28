@@ -1,0 +1,25 @@
+@import '../../../../global/tokens.scss';
+
+.destination {
+  &--navbar {
+    width: 17.8125rem;
+    height: 2.125rem;
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .destination {
+    &--navbar {
+      width: 17.8125rem;
+      height: 2.125rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .destination {
+    &--navbar {
+      width: 100%;
+    }
+  }
+}

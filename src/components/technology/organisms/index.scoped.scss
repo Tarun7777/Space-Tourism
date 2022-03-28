@@ -1,0 +1,59 @@
+@import '../../../global/tokens.scss';
+
+.technology {
+  display: flex;
+  justify-content: flex-start;
+  padding: $token-spacing-8 $token-spacing-0 13rem;
+
+  &--left-panel {
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.5625rem;
+  }
+  &--right-panel {
+    width: 42%;
+  }
+}
+
+@media only screen and (min-width: $token-max-width-tablet) and (max-width: 1280px) {
+  .technology {
+    padding: $token-spacing-0 $token-spacing-4;
+
+    &--left-panel {
+      width: 48%;
+      justify-content: unset;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .technology {
+    flex-direction: column-reverse;
+    padding: $token-spacing-15 $token-spacing-0 $token-spacing-24;
+
+    &--left-panel,
+    &--right-panel {
+      width: 100%;
+      align-items: center;
+    }
+
+    &--left-panel {
+      margin-top: 22.875rem;
+      flex-direction: column;
+    }
+    &--right-panel {
+      margin-top: $token-spacing-0;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .technology {
+    padding: $token-spacing-8 $token-spacing-6 $token-spacing-20;
+
+    &--left-panel {
+      margin-top: 12.75rem;
+    }
+  }
+}

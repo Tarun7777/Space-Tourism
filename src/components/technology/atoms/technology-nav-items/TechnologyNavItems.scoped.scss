@@ -1,0 +1,29 @@
+@import '../../../../global/tokens.scss';
+
+.technology {
+  &--nav-items {
+    height: 19rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .technology {
+    &--nav-items {
+      height: unset;
+      width: 13.125rem;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .technology {
+    &--nav-items {
+      width: 9.5rem;
+    }
+  }
+}

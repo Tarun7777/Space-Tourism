@@ -1,18 +1,16 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './NavItem.css';
+import './NavItem.scoped.scss';
 
-const NavItem = ({ isMain, prefix, value, shouldDisplayPrefix, path }) => {
+const NavItem = ({ prefix, value, shouldDisplayPrefix }) => {
   return (
-    <li className={`nav-item ${isMain ? 'main' : ''}`}>
+    <li className='app--nav-item nav-item--text'>
       <NavLink
         className={(navData) => (navData.isActive ? 'active' : '')}
-        to={`${path}/${value !== 'Home' ? value.toLowerCase() : ''}`}
+        to={`/${value !== 'Home' ? value.toLowerCase() : ''}`}
       >
         {shouldDisplayPrefix && (
-          <span className={`${prefix ? 'nav-item--prefix' : ''}`}>
-            {prefix}
-          </span>
+          <span className={`${prefix ? 'prefix' : ''}`}>{prefix}</span>
         )}
         {value}
       </NavLink>

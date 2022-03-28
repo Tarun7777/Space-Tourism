@@ -1,0 +1,45 @@
+@import '../../../global/tokens.scss';
+
+.home {
+  display: flex;
+  padding: $token-spacing-6 $token-spacing-4 10rem;
+
+  &--left-panel,
+  &--right-panel {
+    width: 50%;
+  }
+  &--right-panel {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .home {
+    flex-direction: column;
+    padding: $token-spacing-6 $token-spacing-20 8rem;
+
+    &--left-panel,
+    &--right-panel {
+      width: 100%;
+    }
+    &--left-panel {
+      text-align: center;
+    }
+    &--right-panel {
+      margin-top: 10rem;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .home {
+    padding: $token-spacing-4 $token-spacing-6 $token-spacing-20;
+
+    &--right-panel {
+      margin-top: $token-spacing-20;
+    }
+  }
+}

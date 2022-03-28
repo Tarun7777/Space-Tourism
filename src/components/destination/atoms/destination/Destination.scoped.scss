@@ -1,0 +1,28 @@
+@import '../../../../global/tokens.scss';
+
+.destination {
+  &--name {
+    margin: 2.3125rem $token-spacing-0 $token-spacing-4;
+  }
+  &--description {
+    height: 8rem;
+    overflow-y: auto;
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .destination {
+    &--description {
+      height: 10rem;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .destination {
+    &--name {
+      margin: $token-spacing-5 $token-spacing-0 $token-spacing-0;
+    }
+  }
+}

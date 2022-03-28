@@ -1,0 +1,48 @@
+@import '../../../../global/tokens.scss';
+
+.app {
+  &--navbar {
+    height: 5rem;
+    width: 66%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+
+    &::before {
+      content: '';
+      height: 1px;
+      width: 40%;
+      background-color: $token-background-primary;
+      opacity: 0.15;
+      position: absolute;
+      top: 2.5rem;
+      left: -37%;
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-tablet) {
+  .app {
+    &--navbar {
+      width: 70%;
+
+      &::before {
+        height: 0px;
+        width: 0%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $token-max-width-mobile) {
+  .app {
+    &--navbar {
+      height: 100vh;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(81.5485px);
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+  }
+}

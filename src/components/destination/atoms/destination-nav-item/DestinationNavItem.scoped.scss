@@ -1,0 +1,30 @@
+@import '../../../../global/tokens.scss';
+
+.destination {
+  &--nav-item {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    button {
+      color: $token-text-color-primary;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      background: transparent;
+      border: $token-border-none;
+      cursor: pointer;
+
+      &:hover {
+        border-bottom: $token-border-primary;
+        color: $token-text-color-secondary;
+      }
+      &.active {
+        border-bottom: $token-border-primary-active;
+        color: $token-text-color-primary !important;
+      }
+    }
+  }
+}
