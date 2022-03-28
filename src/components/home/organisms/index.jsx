@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import LeftPanel from '../atoms/left-panel/LeftPanel';
-import RightPanel from '../atoms/right-panel/RightPanel';
+import LeftPanel from '../molecules/left-panel/LeftPanel';
+import RightPanel from '../molecules/right-panel/RightPanel';
 import { TITLE_HOME } from '../../../constants';
 import './index.css';
 
