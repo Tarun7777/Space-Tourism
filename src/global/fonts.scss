@@ -1,4 +1,5 @@
 @import './mixins.scss';
+@import './tokens.scss';
 
 h1 {
   @include font-bellefair;
@@ -37,6 +38,7 @@ p {
   @include font-barlow;
   font-size: 1.125rem;
   line-height: 32px;
+  color: $token-text-color-secondary;
 
   &.sub-heading-1 {
     @include font-bellefair;

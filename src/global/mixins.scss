@@ -1,4 +1,6 @@
-@import './tokens.scss';
+$token-font-family-bellefair: 'Bellefair', serif;
+$token-font-family-barlow: 'Barlow', sans-serif;
+$token-font-family-barlow-condensed: 'Barlow Condensed', sans-serif;
 
 @mixin font-common {
   font-style: normal;
@@ -20,5 +22,4 @@
 @mixin font-barlow {
   @include font-common();
   font-family: $token-font-family-barlow;
-  color: $token-text-color-secondary;
 }

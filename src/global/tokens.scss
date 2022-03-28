@@ -2,11 +2,6 @@
 
 /*---------------------------- FONTS ----------------------------*/
 
-/*----- FAMILIES -----*/
-$token-font-family-bellefair: 'Bellefair', serif;
-$token-font-family-barlow: 'Barlow', sans-serif;
-$token-font-family-barlow-condensed: 'Barlow Condensed', sans-serif;
-
 /*----- SIZES -----*/
 $token-font-size-regular: 16px; // ALERT! DO NOT CHANGE
 
@@ -38,6 +33,7 @@ $token-font-size-25: 6.25rem;
 $token-font-size-26: 6.5rem;
 $token-font-size-27: 6.75rem;
 $token-font-size-28: 7rem;
+
 /*---------------------------- COLORS ----------------------------*/
 
 /*----- TEXT -----*/
@@ -99,5 +95,5 @@ $token-spacing-28: 7rem;
 
 /*----------------------------  RESPONSIVE WIDTHS ----------------------------*/
 
-$token-max-width-mobile: 600px;
-$token-max-width-tablet: 1024px;
+$token-max-width-mobile: 600px; // ALERT! DO NOT CHANGE
+$token-max-width-tablet: 1024px; // ALERT! DO NOT CHANGE
