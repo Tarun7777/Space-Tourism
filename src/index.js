@@ -6,7 +6,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import App from './App';
 import store from './redux/store/index';
 import reportWebVitals from './reportWebVitals';
-import './index.css';
+import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>

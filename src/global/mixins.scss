@@ -1,0 +1,24 @@
+@import './tokens.scss';
+
+@mixin font-common {
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin font-bellefair {
+  @include font-common();
+  font-family: $token-font-family-bellefair;
+  text-transform: uppercase;
+}
+
+@mixin font-barlow-condensed {
+  @include font-common();
+  font-family: $token-font-family-barlow-condensed;
+  text-transform: uppercase;
+}
+
+@mixin font-barlow {
+  @include font-common();
+  font-family: $token-font-family-barlow;
+  color: $token-text-color-secondary;
+}
