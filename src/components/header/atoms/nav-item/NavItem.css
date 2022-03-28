@@ -8,7 +8,7 @@
   cursor: pointer;
 }
 
-a {
+.app--nav-item a {
   text-decoration: none;
   color: #ffffff;
   width: 100%;
@@ -18,10 +18,10 @@ a {
   text-transform: uppercase;
 }
 
-a:hover {
+.app--nav-item a:hover {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
-.active {
+.app--nav-item .active {
   border-bottom: 3px solid #ffffff !important;
 }
 
@@ -29,15 +29,16 @@ a:hover {
   .app--nav-item {
     font-size: 1rem;
     width: 100%;
+    padding-left: 2rem;
   }
-  a:hover,
-  .active {
-    border-bottom: 0px;
+  .app--nav-item a:hover,
+  .app--nav-item .active {
+    border-bottom: 0px !important;
   }
-  a:hover {
-    border-right: 3px solid rgba(255, 255, 255, 0.5);
+  .app--nav-item a:hover {
+    border-right: 3px solid rgba(255, 255, 255, 0.5) !important;
   }
-  .active {
+  .app--nav-item .active {
     border-right: 3px solid #ffffff !important;
   }
 }

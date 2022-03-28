@@ -18,7 +18,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .app--nav-bar {
+  .app--navbar {
     width: 70%;
   }
   .app--navbar::before {
@@ -28,8 +28,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .app--nav-bar {
-    width: 100%;
+  .app--navbar {
     height: 100vh;
     position: fixed;
     top: 0;

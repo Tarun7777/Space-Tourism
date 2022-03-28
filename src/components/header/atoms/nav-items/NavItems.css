@@ -5,10 +5,19 @@
   justify-content: space-evenly;
 }
 
+@media only screen and (max-width: 1024px) {
+  .app--nav-items {
+    width: 100%;
+    justify-content: space-evenly !important;
+
+  }
+}
+
 @media only screen and (max-width: 600px) {
-  .app-nav-items {
+  .app--nav-items {
     height: 8.75rem;
-    margin: 7.5rem 0 0 2rem;
+    width: 100%;
+    margin-top: 7.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
