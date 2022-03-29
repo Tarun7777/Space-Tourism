@@ -21,7 +21,9 @@ const App = () => {
 
   return (
     <div id='app' className={`app--${route}`}>
-      <Helmet>{getTitle(route)}</Helmet>
+      <Helmet>
+        <title>{getTitle(route)}</title>
+      </Helmet>
       <Header />
       <div className='app--content'>
         <SuperHeading />
