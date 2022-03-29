@@ -1,12 +1,12 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { content, DESTINATION } from '../../../../constants';
+import { content, path, DESTINATION } from '../../../../constants';
 import './RightPanel.scoped.scss';
 
 const Button = () => {
   const navigate = useNavigate();
   const clickHandler = () => {
-    navigate(`/${DESTINATION}`);
+    navigate(`/${path}/${DESTINATION}`);
   };
 
   return (

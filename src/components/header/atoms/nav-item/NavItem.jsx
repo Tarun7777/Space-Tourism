@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useWindowDimensions } from '../../../../hooks/window-dimensions/useWindowDimensions';
-import { MOBILE_MAX_WIDTH } from '../../../../constants';
+import { path, MOBILE_MAX_WIDTH } from '../../../../constants';
 import './NavItem.scoped.scss';
 
 const NavItem = ({ prefix, value, clickHandler, shouldDisplayPrefix }) => {
@@ -15,7 +15,7 @@ const NavItem = ({ prefix, value, clickHandler, shouldDisplayPrefix }) => {
     >
       <NavLink
         className={(navData) => (navData.isActive ? 'active' : '')}
-        to={`/${value !== 'Home' ? value.toLowerCase() : ''}`}
+        to={`/${path}/${value !== 'Home' ? value.toLowerCase() : ''}`}
       >
         {shouldDisplayPrefix && (
           <span className={`${prefix ? 'prefix' : ''}`}>{prefix}</span>
