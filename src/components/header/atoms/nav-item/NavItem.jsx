@@ -1,10 +1,18 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useWindowDimensions } from '../../../../hooks/window-dimensions/useWindowDimensions';
+import { MOBILE_MAX_WIDTH } from '../../../../constants';
 import './NavItem.scoped.scss';
 
 const NavItem = ({ prefix, value, clickHandler, shouldDisplayPrefix }) => {
+  const { width } = useWindowDimensions();
   return (
-    <li onClick={clickHandler} className='app--nav-item nav-item--text'>
+    <li
+      onClick={() => {
+        if (width <= MOBILE_MAX_WIDTH) clickHandler();
+      }}
+      className='app--nav-item nav-item--text'
+    >
       <NavLink
         className={(navData) => (navData.isActive ? 'active' : '')}
         to={`/${value !== 'Home' ? value.toLowerCase() : ''}`}
