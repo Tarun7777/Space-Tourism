@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Space-Tourism/static/css/main.c90e70aa.css",
-    "main.js": "/Space-Tourism/static/js/main.eb9cb83b.js",
+    "main.js": "/Space-Tourism/static/js/main.371e8480.js",
     "static/css/972.fad8a2b1.chunk.css": "/Space-Tourism/static/css/972.fad8a2b1.chunk.css",
     "static/js/972.a630167e.chunk.js": "/Space-Tourism/static/js/972.a630167e.chunk.js",
     "static/css/246.ac8b64ff.chunk.css": "/Space-Tourism/static/css/246.ac8b64ff.chunk.css",
     "static/js/246.81014eea.chunk.js": "/Space-Tourism/static/js/246.81014eea.chunk.js",
     "static/css/962.10da4dda.chunk.css": "/Space-Tourism/static/css/962.10da4dda.chunk.css",
     "static/js/962.6d7d8902.chunk.js": "/Space-Tourism/static/js/962.6d7d8902.chunk.js",
-    "static/css/785.e14ade51.chunk.css": "/Space-Tourism/static/css/785.e14ade51.chunk.css",
+    "static/css/785.c5159018.chunk.css": "/Space-Tourism/static/css/785.c5159018.chunk.css",
     "static/js/785.60400605.chunk.js": "/Space-Tourism/static/js/785.60400605.chunk.js",
     "static/js/787.bf6be71c.chunk.js": "/Space-Tourism/static/js/787.bf6be71c.chunk.js",
     "static/js/646.1b4b845b.chunk.js": "/Space-Tourism/static/js/646.1b4b845b.chunk.js",
@@ -83,19 +83,19 @@
     "static/media/image-titan.webp": "/Space-Tourism/static/media/image-titan.80738bc61e5d1217a19a.webp",
     "index.html": "/Space-Tourism/index.html",
     "main.c90e70aa.css.map": "/Space-Tourism/static/css/main.c90e70aa.css.map",
-    "main.eb9cb83b.js.map": "/Space-Tourism/static/js/main.eb9cb83b.js.map",
+    "main.371e8480.js.map": "/Space-Tourism/static/js/main.371e8480.js.map",
     "972.fad8a2b1.chunk.css.map": "/Space-Tourism/static/css/972.fad8a2b1.chunk.css.map",
     "972.a630167e.chunk.js.map": "/Space-Tourism/static/js/972.a630167e.chunk.js.map",
     "246.ac8b64ff.chunk.css.map": "/Space-Tourism/static/css/246.ac8b64ff.chunk.css.map",
     "246.81014eea.chunk.js.map": "/Space-Tourism/static/js/246.81014eea.chunk.js.map",
     "962.10da4dda.chunk.css.map": "/Space-Tourism/static/css/962.10da4dda.chunk.css.map",
     "962.6d7d8902.chunk.js.map": "/Space-Tourism/static/js/962.6d7d8902.chunk.js.map",
-    "785.e14ade51.chunk.css.map": "/Space-Tourism/static/css/785.e14ade51.chunk.css.map",
+    "785.c5159018.chunk.css.map": "/Space-Tourism/static/css/785.c5159018.chunk.css.map",
     "785.60400605.chunk.js.map": "/Space-Tourism/static/js/785.60400605.chunk.js.map",
     "787.bf6be71c.chunk.js.map": "/Space-Tourism/static/js/787.bf6be71c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c90e70aa.css",
-    "static/js/main.eb9cb83b.js"
+    "static/js/main.371e8480.js"
   ]
 }
