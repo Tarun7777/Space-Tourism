@@ -2,9 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './NavItem.scoped.scss';
 
-const NavItem = ({ prefix, value, shouldDisplayPrefix }) => {
+const NavItem = ({ prefix, value, clickHandler, shouldDisplayPrefix }) => {
   return (
-    <li className='app--nav-item nav-item--text'>
+    <li onClick={clickHandler} className='app--nav-item nav-item--text'>
       <NavLink
         className={(navData) => (navData.isActive ? 'active' : '')}
         to={`/${value !== 'Home' ? value.toLowerCase() : ''}`}

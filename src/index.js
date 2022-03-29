@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { HelmetProvider } from 'react-helmet-async';
+import Loader from './components/loader/organisms/index'
 import App from './App';
 import store from './redux/store/index';
 import reportWebVitals from './reportWebVitals';
@@ -10,13 +11,15 @@ import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HelmetProvider>
-      <Provider store={store}>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </Provider>
-    </HelmetProvider>
+    <React.Suspense fallback={<Loader />}>
+      <HelmetProvider>
+        <Provider store={store}>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </Provider>
+      </HelmetProvider>
+    </React.Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );

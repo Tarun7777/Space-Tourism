@@ -3,12 +3,17 @@ import { Helmet } from 'react-helmet-async';
 import { Route, Routes, useLocation, Navigate } from 'react-router-dom';
 import Header from './components/header/organisms/index';
 import SuperHeading from './organisms/super-heading/SuperHeading';
-import Home from './components/home/organisms/index';
-import Destination from './components/destination/organisms/index';
-import Crew from './components/crew/organisms/index';
-import Technology from './components/technology/organisms/index';
 import { getLastSegmentOfPath, getTitle } from './utils/utils';
 import './App.scoped.scss';
+
+const Home = React.lazy(() => import('./components/home/organisms/index'));
+const Destination = React.lazy(() =>
+  import('./components/destination/organisms/index')
+);
+const Crew = React.lazy(() => import('./components/crew/organisms/index'));
+const Technology = React.lazy(() =>
+  import('./components/technology/organisms/index')
+);
 
 const App = () => {
   const route = getLastSegmentOfPath(useLocation().pathname);
