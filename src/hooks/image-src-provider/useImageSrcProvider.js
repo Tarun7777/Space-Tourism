@@ -32,7 +32,7 @@ const getImageMode = (width, checkMode) => {
 };
 
 export const useImageSrcProvider = ({ pageName, imageType, checkMode }) => {
-  const currentPageIdObj = useSelector((state) => state);
+  const currentPageIdObj = useSelector((state) => state.spaceTourism);
   const { width } = useWindowDimensions();
   const { imageName, imageAlt } = getName(pageName, currentPageIdObj);
   const [imageSrc, setImageSrc] = React.useState('');

@@ -13,7 +13,7 @@ const imageDetails = {
 const getImageHeight = (id) => (id === '1' ? '100%' : '90%');
 
 const RightPanel = () => {
-  const { crewId } = useSelector((state) => state);
+  const { crewId } = useSelector((state) => state.spaceTourism);
   const { width } = useWindowDimensions();
   const shouldApplyInlineImgHeight = width > MOBILE_MAX_WIDTH;
 
