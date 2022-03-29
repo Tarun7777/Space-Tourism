@@ -4,7 +4,7 @@ import { content } from '../../../../constants';
 import './CrewDetails.scoped.scss';
 
 const CrewDetails = () => {
-  const { crewId } = useSelector((state) => state);
+  const { crewId } = useSelector((state) => state.spaceTourism);
   const index = crewId - 1;
 
   return (

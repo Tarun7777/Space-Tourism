@@ -5,7 +5,7 @@ import './NavItems.scoped.scss';
 
 const navItems = content?.main?.navItems;
 
-const NavItems = ({ shouldDisplayPrefix }) => {
+const NavItems = ({ clickHandler, shouldDisplayPrefix }) => {
   return (
     <ul className='app--nav-items flex'>
       {navItems.map((item, index) => (
@@ -13,6 +13,7 @@ const NavItems = ({ shouldDisplayPrefix }) => {
           key={index}
           prefix={item?.prefix}
           value={item?.value}
+          clickHandler={clickHandler}
           shouldDisplayPrefix={shouldDisplayPrefix}
         />
       ))}

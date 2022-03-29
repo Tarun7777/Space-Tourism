@@ -27,7 +27,10 @@ const Navbar = () => {
       )}
       {(!shouldDisplayNavToggler || isNavBarOpen) && (
         <nav className='app--navbar'>
-          <NavItems shouldDisplayPrefix={shouldDisplayPrefix} />
+          <NavItems
+            clickHandler={clickHandler}
+            shouldDisplayPrefix={shouldDisplayPrefix}
+          />
         </nav>
       )}
     </>

@@ -4,7 +4,7 @@ import { content } from '../../../../constants';
 import './DestinationDetails.scoped.scss';
 
 const DestinationDetail = () => {
-  const { destinationId } = useSelector((state) => state);
+  const { destinationId } = useSelector((state) => state.spaceTourism);
 
   return (
     <>

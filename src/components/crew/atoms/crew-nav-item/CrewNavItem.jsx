@@ -1,12 +1,12 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { spaceTourismActions } from '../../../../redux/slice';
+import { spaceTourismActions } from '../../../../redux/slice/spaceTourism';
 import { CREW } from '../../../../constants';
 import './CrewNavItem.scoped.scss';
 
 const CrewNavItem = ({ id }) => {
   const dispatch = useDispatch();
-  const { crewId } = useSelector((state) => state);
+  const { crewId } = useSelector((state) => state.spaceTourism);
 
   const clickHandler = () => {
     dispatch(spaceTourismActions.updateEntry({ type: CREW, id }));
