@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism=self.webpackChunkspace_tourism||[]).push([[881],{7881:function(e,s,c){e.exports=c.p+"static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg"}}]);

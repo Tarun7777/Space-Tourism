@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism=self.webpackChunkspace_tourism||[]).push([[564],{7564:function(e,s,p){e.exports=p.p+"static/media/image-europa.c3be32383f31d0f76d96.webp"}}]);

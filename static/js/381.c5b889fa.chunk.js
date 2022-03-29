@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism=self.webpackChunkspace_tourism||[]).push([[381],{7381:function(e,a,s){e.exports=s.p+"static/media/image-spaceport-landscape.0f3ca5c05a3e87191ea7.jpg"}}]);

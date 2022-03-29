@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism=self.webpackChunkspace_tourism||[]).push([[86],{7086:function(e,c,s){e.exports=s.p+"static/media/background-technology-tablet.48c38b028217ee0096c4.jpg"}}]);

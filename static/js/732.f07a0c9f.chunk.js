@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism=self.webpackChunkspace_tourism||[]).push([[732],{8732:function(e,s,a){e.exports=a.p+"static/media/image-titan.80738bc61e5d1217a19a.webp"}}]);

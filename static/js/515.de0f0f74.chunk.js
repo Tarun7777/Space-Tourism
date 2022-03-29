@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkspace_tourism=self.webpackChunkspace_tourism||[]).push([[515],{4515:function(a,s,e){a.exports=e.p+"static/media/image-space-capsule-landscape.d672da81d5ff3ada7301.jpg"}}]);
