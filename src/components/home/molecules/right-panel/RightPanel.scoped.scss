@@ -12,6 +12,7 @@
   border: none;
   border-radius: $token-border-radius-primary;
   cursor: pointer;
+  transition: box-shadow 0.2s linear;
 
   &:hover,
   &:active {
